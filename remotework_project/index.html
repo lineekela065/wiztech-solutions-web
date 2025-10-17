@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Work Revolution | The Future of Global Collaboration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #4cc9f0;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4bb543;
+            --warning: #ffcc00;
+            --danger: #dc3545;
+            --gray: #6c757d;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: #f5f7ff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+        }
+
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(67, 97, 238, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .logo i {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: var(--transition);
+        }
+
+        nav a:hover, nav a.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(67, 97, 238, 0.9), rgba(58, 12, 163, 0.9)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 180px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%23f5f7ff'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 60px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem 1rem;
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .stat-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-text {
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* Posts Section */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .post-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .post-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .post-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .post-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .post-content {
+            padding: 1.5rem;
+        }
+
+        .post-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .post-content p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .post-date {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .read-more:hover {
+            color: var(--secondary);
+            gap: 0.8rem;
+        }
+
+        /* Podcast Section */
+        .podcast-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .podcast-section .section-title h2 {
+            color: white;
+        }
+
+        .podcast-section .section-title p {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .podcast-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: var(--transition);
+        }
+
+        .podcast-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .podcast-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .podcast-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .podcast-description {
+            margin-top: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Video Section */
+        .video-section {
+            background: white;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+
+        /* Tools Section */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tool-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .tool-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .tool-card h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .tool-card p {
+            color: var(--gray);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-column p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .posts-grid, .tools-grid, .podcast-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-laptop-house"></i>
+                    <span>RemoteWork Revolution</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#trends">Trends</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#podcasts">Podcasts</a></li>
+                        <li><a href="#video">Video</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>The Rise of Remote Work Culture</h1>
+                <p>How technology is transforming workplaces and enabling global collaboration in the digital age</p>
+                <div class="hero-buttons">
+                    <a href="#trends" class="btn">Explore Trends</a>
+                    <a href="#podcasts" class="btn btn-outline">Listen to Podcasts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-number">74%</div>
+                    <div class="stat-text">Companies Planning Permanent Remote Work</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="stat-number">42%</div>
+                    <div class="stat-text">Increase in Global Remote Workforce</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-clock"></i>
+                    </div>
+                    <div class="stat-number">2.5hrs</div>
+                    <div class="stat-text">Daily Time Saved from Commuting</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-number">$11,000</div>
+                    <div class="stat-text">Average Annual Savings per Remote Worker</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Posts Section (10 Posts) -->
+    <section id="trends">
+        <div class="container">
+            <div class="section-title">
+                <h2>Remote Work Trends & Insights</h2>
+                <p>Explore the latest developments shaping the future of work and global collaboration</p>
+            </div>
+            <div class="posts-grid">
+                <!-- Post 1 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Technology</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Collaboration Tools Revolutionizing Remote Work</h3>
+                        <p>How platforms like Slack, Microsoft Teams, and Asana are enabling seamless communication and project management across distributed teams.</p>
+                        <div class="post-meta">
+                            <div class="post-date">May 15, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Culture</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Building Strong Remote Team Culture</h3>
+                        <p>Strategies for fostering connection, trust, and engagement in distributed teams despite physical distance.</p>
+                        <div class="post-meta">
+                            <div class="post-date">April 28, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1551836026-d5c8c1a5ced3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Productivity</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Maximizing Productivity in Remote Settings</h3>
+                        <p>Evidence-based techniques for maintaining focus, managing time, and avoiding burnout while working from home.</p>
+                        <div class="post-meta">
+                            <div class="post-date">April 12, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 4 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Globalization</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>The Global Talent Pool: Opportunities & Challenges</h3>
+                        <p>How remote work is breaking down geographical barriers and creating access to diverse talent worldwide.</p>
+                        <div class="post-meta">
+                            <div class="post-date">March 30, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 5 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Security</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Cybersecurity in the Remote Work Era</h3>
+                        <p>Essential practices for protecting company data and maintaining security standards with distributed teams.</p>
+                        <div class="post-meta">
+                            <div class="post-date">March 18, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 6 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Wellness</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Mental Health and Work-Life Balance</h3>
+                        <p>Addressing the unique challenges of remote work on mental wellbeing and strategies for maintaining boundaries.</p>
+                        <div class="post-meta">
+                            <div class="post-date">March 5, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 7 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Management</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Leading Distributed Teams Effectively</h3>
+                        <p>Adapting management styles for remote environments and measuring performance without micromanaging.</p>
+                        <div class="post-meta">
+                            <div class="post-date">February 22, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 8 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Future</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>The Hybrid Work Model: Best of Both Worlds?</h3>
+                        <p>Analyzing the benefits and challenges of combining remote and in-office work arrangements.</p>
+                        <div class="post-meta">
+                            <div class="post-date">February 10, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 9 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1551836026-d5c8c1a5ced3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Technology</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>VR and AR: The Next Frontier in Remote Collaboration</h3>
+                        <p>How immersive technologies are creating more engaging virtual meeting experiences.</p>
+                        <div class="post-meta">
+                            <div class="post-date">January 28, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post 10 -->
+                <div class="post-card">
+                    <div class="post-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="post-category">Policy</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Legal and Compliance Considerations for Remote Work</h3>
+                        <p>Navigating tax, labor laws, and regulatory requirements for distributed teams across jurisdictions.</p>
+                        <div class="post-meta">
+                            <div class="post-date">January 15, 2025</div>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools">
+        <div class="container">
+            <div class="section-title">
+                <h2>Essential Remote Work Tools</h2>
+                <p>Technology solutions that enable seamless collaboration and productivity for distributed teams</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fab fa-slack"></i>
+                    </div>
+                    <h3>Communication</h3>
+                    <p>Slack, Microsoft Teams, Discord for instant messaging and team channels</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Conferencing</h3>
+                    <p>Zoom, Google Meet, Microsoft Teams for virtual meetings and presentations</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                    <p>Asana, Trello, Jira for task tracking and workflow management</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Storage</h3>
+                    <p>Google Drive, Dropbox, OneDrive for file sharing and collaboration</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>VPNs, password managers, and encryption tools for data protection</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <h3>Time Management</h3>
+                    <p>RescueTime, Toggl, Clockify for tracking productivity and focus time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcast Section -->
+    <section class="podcast-section" id="podcasts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Remote Work Podcast Series</h2>
+                <p>Listen to our expert discussions on the future of work and global collaboration</p>
+            </div>
+            <div class="podcast-grid">
+                <!-- Podcast 1 -->
+                <div class="podcast-card">
+                    <h3>Episode 1: The Technology Enabling Remote Work</h3>
+                    <div class="podcast-meta">
+                        <span><i class="far fa-clock"></i> 15:42</span>
+                        <span><i class="far fa-calendar"></i> May 10, 2025</span>
+                    </div>
+                    <p class="podcast-description">Exploring the essential tools and platforms that make distributed teams possible and productive.</p>
+                    <audio controls class="audio-player">
+                        <source src="#" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p><small>Record your 3+ minute podcast and replace this audio source</small></p>
+                </div>
+
+                <!-- Podcast 2 -->
+                <div class="podcast-card">
+                    <h3>Episode 2: Building Culture in Distributed Teams</h3>
+                    <div class="podcast-meta">
+                        <span><i class="far fa-clock"></i> 18:25</span>
+                        <span><i class="far fa-calendar"></i> April 25, 2025</span>
+                    </div>
+                    <p class="podcast-description">Strategies for fostering connection, trust, and engagement when team members are geographically dispersed.</p>
+                    <audio controls class="audio-player">
+                        <source src="#" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p><small>Record your 3+ minute podcast and replace this audio source</small></p>
+                </div>
+
+                <!-- Podcast 3 -->
+                <div class="podcast-card">
+                    <h3>Episode 3: The Future of Global Collaboration</h3>
+                    <div class="podcast-meta">
+                        <span><i class="far fa-clock"></i> 16:50</span>
+                        <span><i class="far fa-calendar"></i> April 12, 2025</span>
+                    </div>
+                    <p class="podcast-description">How remote work is breaking down geographical barriers and creating new opportunities for international teamwork.</p>
+                    <audio controls class="audio-player">
+                        <source src="#" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p><small>Record your 3+ minute podcast and replace this audio source</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <div class="section-title">
+                <h2>Remote Work in Action</h2>
+                <p>See how technology enables seamless global collaboration and transforms traditional workplaces</p>
+            </div>
+            <div class="video-container">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/McC6NLf8X_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p style="text-align: center; margin-top: 1rem; color: var(--gray);">You can replace this embedded YouTube video with your own original video content about remote work</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join the Remote Work Revolution</h2>
+            <p>Discover how your organization can leverage technology to build effective distributed teams and tap into global talent</p>
+            <a href="#" class="btn">Download Free Remote Work Guide</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>RemoteWork Revolution</h3>
+                    <p>Exploring how technology is transforming workplaces and enabling global collaboration in the digital age.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#trends">Trends & Insights</a></li>
+                        <li><a href="#tools">Essential Tools</a></li>
+                        <li><a href="#podcasts">Podcasts</a></li>
+                        <li><a href="#video">Video</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Remote Work Guide</a></li>
+                        <li><a href="#">Tool Comparisons</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>ITL60US / IDT60US Final Project</p>
+                    <p>Due Date: 20th October 2025</p>
+                    <p>Group Members: [Your Names Here]</p>
+                    <p>Examiner: Mr. Abner T Kristof</p>
+                    <p>Moderator: Mr. L. Gawanab</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Remote Work Revolution. All rights reserved. | ITL60US/IDT60US Group Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Update active navigation link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
